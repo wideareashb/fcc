@@ -1,0 +1,1 @@
+/usr/local/src/websites/it_cms/items/articles.phps

@@ -1,0 +1,140 @@
+<!-- EXTENDSTEMPLATE './base.thtml' -->
+<!-- BEGIN PageContents -->
+
+	<div class="jumbotron" style='background-image: url("/images/fcc-bg.jpg"); background-size: cover; background-position: left bottom;'>
+		<div class="container text-xs-center">
+			<h1 class="display-3">
+				<img src="/images/fcc-logo.png">
+			</h1>
+			<p class="text-white">
+				Fortismere Community Choir started in 2009 and is an unauditioned choir. <br> We welcome those with and without musical experience, who have a desire to sing with like-minded people.
+			</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-envelope" aria-hidden="true"></i> Email updates</a>
+				<a class="btn btn-primary btn-lg" href="https://twitter.com/FCchoir" role="button" target="_blank"><i class="fa fa-twitter"></i> Follow on twitter</a>
+			</p>
+		</div>
+	</div>
+	<!-- BEGIN AboutUs -->
+	<!-- PRESENT 1 ARTICLES
+		WHERE
+			CMS_Section = "Fortismere Community Choir//About us"
+		TNESERP
+	 -->
+	<div class="content-section-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-sm-6">
+					<hr class="section-heading-spacer">
+					<div class="clearfix"></div>
+					<h2 class="section-heading"><a href="/about-us/{ArticleUri}">{ArticleHeadline}</a></h2>
+					<p class="lead">{ArticleIntro}</p>
+				</div>
+				<div class="col-lg-5 offset-lg-2 col-sm-6">
+					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END AboutUs -->
+
+	<!-- BEGIN NextConcert -->
+	<!-- PRESENT 1 ARTICLES
+		WHERE
+			CMS_Section = "Fortismere Community Choir//Next concert"
+		TNESERP
+	 -->
+	<div class="content-section-b">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 offset-lg-1 push-sm-6  col-sm-6">
+					<hr class="section-heading-spacer">
+					<div class="clearfix"></div>
+					<h2 class="section-heading"><a href="/next-concert/{ArticleUri}">{ArticleHeadline}</a></h2>
+					<p class="lead">{ArticleIntro}</p>
+				</div>
+				<div class="col-lg-5 pull-sm-6  col-sm-6">
+					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END NextConcert -->
+	
+	<!-- BEGIN Gallery -->
+	<!-- PRESENT 1 ARTICLES
+		WHERE
+			CMS_Section = "Fortismere Community Choir//Gallery"
+		TNESERP
+	 -->
+	<div class="content-section-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-sm-6">
+					<hr class="section-heading-spacer">
+					<div class="clearfix"></div>
+					<h2 class="section-heading"><a href="/gallery/{ArticleUri}">{ArticleHeadline}</a></h2>
+					<p class="lead">{ArticleIntro}</p>
+				</div>
+				<div class="col-lg-5 offset-lg-2 col-sm-6">
+					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Gallery -->
+
+	<div class="content-section-b">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 offset-lg-1 push-sm-6  col-sm-6">
+					<hr class="section-heading-spacer">
+					<div class="clearfix"></div>
+	<!-- BEGIN PastConcert -->
+	<!-- PRESENT 1 ARTICLES
+		WHERE
+			CMS_Section = "Fortismere Community Choir//Past concerts"
+		TNESERP
+	 -->
+					<h2 class="section-heading"><a href="/past-concerts/">{ArticleHeadline}</a></h2>
+					<p class="lead">{ArticleIntro}</p>
+	<!-- END PastConcert -->
+				</div>
+	<!-- BEGIN PastConcertImage -->
+	<!-- PRESENT 1 ARTICLES  IN DisplayOrder ORDER
+		WHERE
+			CMS_Section = "Fortismere Community Choir//Past concerts//Programmes"
+		TNESERP
+	 -->
+				<div class="col-lg-5 pull-sm-6  col-sm-6">
+					<img class="img-fluid" src="{ArticleImage1_large}" alt="">
+				</div>
+	<!-- END PastConcertImage -->
+			</div>
+		</div>
+	</div>
+	
+	<!-- BEGIN InformationForMembers -->
+	<!-- PRESENT 1 ARTICLES
+		WHERE
+			CMS_Section = "Fortismere Community Choir//Information for members"
+		TNESERP
+	 -->
+	<div class="content-section-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-sm-6">
+					<hr class="section-heading-spacer">
+					<div class="clearfix"></div>
+					<h2 class="section-heading"><a href="/members/{ArticleUri}">{ArticleHeadline}</a></h2>
+					<p class="lead">{ArticleIntro}</p>
+				</div>
+				<div class="col-lg-5 offset-lg-2 col-sm-6">
+					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END InformationForMembers -->
+<!-- END PageContents -->
+	

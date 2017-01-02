@@ -1,0 +1,11 @@
+<!-- EXTENDSTEMPLATE './base.thtml' -->
+<!-- BEGIN PageContents -->
+<!-- PRESENT CURRENT ARTICLE TNESERP -->
+<div class="container">
+	<div class="row">
+		<h1 class="mt-1">{ArticleHeadline}</h1>
+		<hr>
+		{ArticleBody}
+	</div>
+</div>
+<!-- END PageContents -->

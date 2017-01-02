@@ -1,0 +1,26 @@
+<!-- EXTENDSTEMPLATE './base.thtml' -->
+<!-- BEGIN PageContents -->
+<div class="container">
+	<div class="row">
+		<h1 class="mt-1">Past concerts</h1>
+		<hr>
+	</div>
+<!-- BEGIN PageContentsProgrammes -->
+<!-- PRESENT ALL ARTICLES IN DisplayOrder ORDER
+	WHERE
+		CMS_Section = "Fortismere Community Choir//Past concerts//Programmes"
+	TNESERP
+ -->
+	<div class="row">
+		<h2>{ArticleHeadline}</h2>
+		<div class="clearfix"></div>
+		<div class="col-sm-8">
+			{ArticleBody}
+		</div>
+		<div class="col-sm-4">
+			<img class="img-fluid" src="{ArticleImage1_large}" alt="">
+		</div>
+	</div>
+<!-- END PageContentsProgrammes -->
+</div>
+<!-- END PageContents -->
