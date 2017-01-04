@@ -12,6 +12,7 @@
 			<p>
 				<a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-envelope" aria-hidden="true"></i> Email updates</a>
 				<a class="btn btn-primary btn-lg" href="https://twitter.com/FCchoir" role="button" target="_blank"><i class="fa fa-twitter"></i> Follow on twitter</a>
+				<a class="btn btn-primary btn-lg" href="https://www.facebook.com/FortismereCommunityChoir/" role="button" target="_blank"><i class="fa fa-facebook"></i> Follow on Facebook</a>
 			</p>
 		</div>
 	</div>
@@ -28,10 +29,14 @@
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading"><a href="/about-us/{ArticleUri}">{ArticleHeadline}</a></h2>
-					<p class="lead">{ArticleIntro}</p>
+					<div class="lead">{ArticleIntro}
+						<a href="/about-us/{ArticleUri}">
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-2 col-sm-6">
-					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+					<a href="/about-us/{ArticleUri}"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -51,10 +56,14 @@
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading"><a href="/next-concert/{ArticleUri}">{ArticleHeadline}</a></h2>
-					<p class="lead">{ArticleIntro}</p>
+					<div class="lead">{ArticleIntro}
+						<a href="/next-concert/{ArticleUri}">
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-5 pull-sm-6  col-sm-6">
-					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+					<a href="/next-concert/{ArticleUri}"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -74,10 +83,14 @@
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading"><a href="/gallery/{ArticleUri}">{ArticleHeadline}</a></h2>
-					<p class="lead">{ArticleIntro}</p>
+					<div class="lead">{ArticleIntro}
+						<a href="/gallery/{ArticleUri}">
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-2 col-sm-6">
-					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+					<a href="/gallery/{ArticleUri}"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -97,19 +110,25 @@
 		TNESERP
 	 -->
 					<h2 class="section-heading"><a href="/past-concerts/">{ArticleHeadline}</a></h2>
-					<p class="lead">{ArticleIntro}</p>
-	<!-- END PastConcert -->
+					<div class="lead">{ArticleIntro}
+						<a href="/past-concerts/{ArticleUri}">
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
+				<div class="col-lg-5 pull-sm-6  col-sm-6">
+					<a href="/past-concerts/{ArticleUri}">
+	<!-- END PastConcert -->
 	<!-- BEGIN PastConcertImage -->
 	<!-- PRESENT 1 ARTICLES  IN DisplayOrder ORDER
 		WHERE
 			CMS_Section = "Fortismere Community Choir//Past concerts//Programmes"
 		TNESERP
 	 -->
-				<div class="col-lg-5 pull-sm-6  col-sm-6">
 					<img class="img-fluid" src="{ArticleImage1_large}" alt="">
-				</div>
 	<!-- END PastConcertImage -->
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -127,10 +146,14 @@
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading"><a href="/members/{ArticleUri}">{ArticleHeadline}</a></h2>
-					<p class="lead">{ArticleIntro}</p>
+					<div class="lead">{ArticleIntro}
+						<a href="/members/{ArticleUri}">
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-2 col-sm-6">
-					<img class="img-fluid" src="{ArticleImage1_listing}" alt="">
+					<a href="/members/{ArticleUri}"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
 				</div>
 			</div>
 		</div>

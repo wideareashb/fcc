@@ -38,6 +38,7 @@
 			<div class="collapse navbar-toggleable-md" id="navbarResponsive">
 				<a class="navbar-brand topnav" href="/index2.thtml">Fortismere Community Choir</a>
 				<ul class="nav navbar-nav float-xs-right">
+					<li class="nav-item"><a class="nav-link" href="/index2.thtml"><i class="fa fa-home" aria-hidden="true"></i></a></li>
 					<li class="nav-item"><a class="nav-link" href="/about-us/124426/about-us.thtml">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="/next-concert/124431/next-concert.thtml">Next concert</a></li>
 					<li class="nav-item"><a class="nav-link" href="/gallery/124436/gallery.thtml">Gallery</a></li>
