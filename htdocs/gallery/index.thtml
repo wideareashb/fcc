@@ -1,0 +1,60 @@
+<!-- EXTENDSTEMPLATE './base.thtml' -->
+
+<!-- BEGIN PageSpecificHead -->	
+<!-- PRESENT CURRENT BLOCK TNESERP -->
+<link rel="stylesheet" href="/javascript/colorbox-master/example2/colorbox.css">
+<!-- END PageSpecificHead -->	
+
+<!-- BEGIN PageContents -->
+<!-- BEGIN TopArticle -->
+<!-- PRESENT 1 ARTICLES
+	WHERE CMS_Section = "Fortismere Community Choir//Gallery"
+	ALLOW DUPLICATES
+	TNESERP -->
+<div class="container">
+	<div class="row">
+		<h1 class="mt-1">{ArticleHeadline}</h1>
+		<hr>
+		{ArticleBody}
+	</div>
+</div>
+<!-- END TopArticle -->
+
+<!-- BEGIN Galleries -->
+<!-- PRESENT 10 ARTICLES PER PAGE IN DisplayOrder ORDER
+	WHERE CMS_Section = "Fortismere Community Choir//Gallery//Events"
+	ALLOW DUPLICATES
+	TNESERP -->
+<div class="container">
+	<div class="row">
+		<h1 class="mt-1">{ArticleHeadline}</h1>
+		<hr>
+		{ArticleBody}
+		<div class="colorbox" data-rel="cb{ArticleID}">
+			<p class="lead">Click an image to enlarge</p>
+		<!-- BEGIN ImagesInclude -->
+		<!-- INCLUDETEMPLATE '/template-includes/all-images.thtml' -->
+		<!-- END ImagesInclude -->
+			
+		</div>
+	</div>
+</div>
+<!-- END Galleries -->
+<!-- END PageContents -->
+<!-- BEGIN JSBlock -->
+<!-- PRESENT CURRENT BLOCK TNESERP -->
+	<script src="https://cdn.jsdelivr.net/g/colorbox" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script>
+		/* {Now} */
+		$('.colorbox').each(function() {
+			var relValue = $(this).data('rel') ;
+			$(this).find('a.gallery').colorbox({
+				rel: 		relValue,
+				transition:	'fade',
+				maxWidth:		'95%', 
+				maxHeight:	'95%'
+			});	
+		}) ;
+		
+	</script>
+<!-- END JSBlock -->

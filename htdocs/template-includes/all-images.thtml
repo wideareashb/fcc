@@ -1,0 +1,10 @@
+<!-- BEGIN AllImages -->
+<!-- PRESENT ALL ELEMENTS
+	WHERE 
+		ElementType = 'Image'
+		ID = Parent_ArticleID 
+	TNESERP -->
+	<a class="gallery" href="{ArticleImage_A5at300dpi}" rel="cb{Parent_ArticleID}">
+		<img src="{ArticleThumbnailImage}">
+	</a>
+<!-- END AllImages -->
