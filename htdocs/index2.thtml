@@ -4,15 +4,15 @@
 	<div class="jumbotron" style='background-image: url("/images/fcc-bg.jpg"); background-size: cover; background-position: left bottom;'>
 		<div class="container text-xs-center">
 			<h1 class="display-3">
-				<img src="/images/fcc-logo.png">
+				<img class="img-fluid" src="/images/fcc-logo.png">
 			</h1>
 			<p class="text-white">
 				Fortismere Community Choir started in 2009 and is an unauditioned choir. <br> We welcome those with and without musical experience, who have a desire to sing with like-minded people.
 			</p>
 			<p>
-				<a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-envelope" aria-hidden="true"></i> Email updates</a>
-				<a class="btn btn-primary btn-lg" href="https://twitter.com/FCchoir" role="button" target="_blank"><i class="fa fa-twitter"></i> Follow on twitter</a>
-				<a class="btn btn-primary btn-lg" href="https://www.facebook.com/FortismereCommunityChoir/" role="button" target="_blank"><i class="fa fa-facebook"></i> Follow on Facebook</a>
+				<a class="btn btn-primary btn-lg mt-1" href="#" id="email-signup" role="button"><i class="fa fa-envelope" aria-hidden="true"></i> Email updates</a>
+				<a class="btn btn-primary btn-lg mt-1" href="https://twitter.com/FCchoir" role="button" target="_blank"><i class="fa fa-twitter"></i> Follow on twitter</a>
+				<a class="btn btn-primary btn-lg mt-1" href="https://www.facebook.com/FortismereCommunityChoir/" role="button" target="_blank"><i class="fa fa-facebook"></i> Follow on Facebook</a>
 			</p>
 		</div>
 	</div>
@@ -82,15 +82,15 @@
 				<div class="col-lg-5 col-sm-6">
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
-					<h2 class="section-heading"><a href="/gallery/{ArticleUri}">{ArticleHeadline}</a></h2>
+					<h2 class="section-heading"><a href="/gallery/">{ArticleHeadline}</a></h2>
 					<div class="lead">{ArticleIntro}
-						<a href="/gallery/{ArticleUri}">
+						<a href="/gallery/">
 							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-2 col-sm-6">
-					<a href="/gallery/{ArticleUri}"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
+					<a href="/gallery/"><img class="img-fluid" src="{ArticleImage1_listing}" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -160,4 +160,17 @@
 	</div>
 	<!-- END InformationForMembers -->
 <!-- END PageContents -->
+<!-- BEGIN JSBlock -->
+<!-- PRESENT CURRENT BLOCK TNESERP -->
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script>
+		/* {Now} */
+		$.removeCookie('MCEvilPopupClosed') ;
+		$('#email-signup').on('click', function() {
+			$.removeCookie('MCEvilPopupClosed') ;
+			require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us9.list-manage.com","uuid":"3980d9798ddca79423f45c2c2","lid":"020bb0d2c7"}) }) ;
+			$.removeCookie('MCEvilPopupClosed') ;
+		})  ;
+	</script>
+<!-- END JSBlock -->
 	
