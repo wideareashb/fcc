@@ -27,14 +27,14 @@
 	TNESERP -->
 <div class="container">
 	<div class="row">
-		<h1 class="mt-1">{ArticleHeadline}</h1>
-		<hr>
+		<h2 class="mt-1">{ArticleHeadline}</h2>
 		{ArticleBody}
 		<div class="colorbox" data-rel="cb{ArticleID}">
 			<p class="lead">Click an image to enlarge</p>
 		<!-- BEGIN ImagesInclude -->
 		<!-- INCLUDETEMPLATE '/template-includes/all-images.thtml' -->
 		<!-- END ImagesInclude -->
+		<hr>
 			
 		</div>
 	</div>
