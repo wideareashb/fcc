@@ -133,10 +133,11 @@
 		</div>
 	</div>
 	
-	<!-- BEGIN InformationForMembers -->
-	<!-- PRESENT 1 ARTICLES
+	<!-- BEGIN InformationForMembersBottom -->
+	<!-- PRESENT 1 ARTICLES IN DisplayOrder ORDER
 		WHERE
 			CMS_Section = "Fortismere Community Choir//Information for members"
+		ALLOW DUPLICATES
 		TNESERP
 	 -->
 	<div class="content-section-a">
@@ -158,7 +159,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- END InformationForMembers -->
+	<!-- END InformationForMembersBottom -->
 <!-- END PageContents -->
 <!-- BEGIN JSBlock -->
 <!-- PRESENT CURRENT BLOCK TNESERP -->
